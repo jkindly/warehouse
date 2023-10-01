@@ -16,6 +16,7 @@
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.3.*",
         "symfony/runtime": "6.3.*",
+        "symfony/security-bundle": "6.3.*",
         "symfony/webpack-encore-bundle": "^2.1",
         "symfony/yaml": "6.3.*"
     },
@@ -68,6 +69,9 @@
         }
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.51"
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "symfony/maker-bundle": "^1.51",
+        "symfony/stopwatch": "6.3.*",
+        "symfony/web-profiler-bundle": "6.3.*"
     }
 }
