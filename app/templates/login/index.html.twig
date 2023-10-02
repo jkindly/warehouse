@@ -5,19 +5,25 @@
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
-    <form action="{{ path('app_login') }}" method="post">
-        <label for="username">Email:</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}">
+    <section class="login">
+        <h3>Warehouse</h3>
+        <div class="login__form">
+            <form action="{{ path('app_login') }}" method="post">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="email" name="_username"
+                           value="{{ last_username }}">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="_password">
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="_password">
+                </div>
 
-        {# If you want to control the URL the user is redirected to on success
-        <input type="hidden" name="_target_path" value="/account"> #}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
-        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
-
-
-        <button type="submit">login</button>
-    </form>
+                <button class="btn btn-primary w-100" type="submit">login</button>
+            </form>
+        </div>
+    </section>
 {% endblock %}

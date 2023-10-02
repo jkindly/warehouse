@@ -1,0 +1,26 @@
+@use 'abstracts' as a;
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background: a.$color-light-blue;
+
+	&__form {
+		width: 400px;
+		height: 400px;
+		padding: 10px;
+		background: a.$color-white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+
+		input {
+			border: none;
+			border-bottom: 1px solid black;
+			border-radius: 0;
+		}
+	}
+}
