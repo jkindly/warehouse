@@ -6,3 +6,6 @@ app:
         input:
             email: Email
             password: Hasło
+    menu:
+        products:
+            title: Produkty
