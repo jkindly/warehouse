@@ -1,0 +1,5 @@
+@use "../abstracts" as a;
+
+body {
+	font-family: a.$font-family-base;
+}

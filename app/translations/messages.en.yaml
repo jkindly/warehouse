@@ -1,0 +1,8 @@
+app:
+    title: Warehouse
+    login_form:
+        button:
+            text: Login
+        input:
+            email: Email
+            password: Password

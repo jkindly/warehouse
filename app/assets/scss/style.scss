@@ -1,2 +1,4 @@
-@import "~bootstrap/scss/bootstrap";
-@import "login";
+@use "vendors";
+@use "base";
+@use "theme";
+@use "pages";
