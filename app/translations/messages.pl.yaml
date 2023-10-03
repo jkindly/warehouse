@@ -9,3 +9,13 @@ app:
     menu:
         products:
             title: Produkty
+    crud:
+        product:
+            new:
+                title: Dodaj nowy produkt
+                name: Nazwa
+                description: Opis
+                price: Cena
+                image: Grafika
+                sku: SKU
+                quantity: Ilość

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Entity\Product;
+use App\Entity\ProductCategory;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -40,5 +41,10 @@ class DashboardController extends AbstractDashboardController
             'fas fa-list',
             Product::class
         )->setController(ProductCrudController::class);
+        yield MenuItem::linkToCrud(
+            'app.menu.categories.title',
+            'fas fa-list',
+            ProductCategory::class
+        )->setController(ProductCategoryCrudController::class);
     }
 }
