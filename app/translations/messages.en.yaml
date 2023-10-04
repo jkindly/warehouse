@@ -9,14 +9,19 @@ app:
     menu:
         products:
             title: Products
+        categories:
+            title: Categories
     crud:
         product:
             new:
                 title: Add new product
                 name: Name
+                category: Category
                 description: Description
                 price: Price
                 image: Image
                 sku: SKU
                 quantity: Quantity
-
+        product_category:
+            index:
+                title: Product categories

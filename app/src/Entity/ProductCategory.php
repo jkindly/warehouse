@@ -72,4 +72,15 @@ class ProductCategory
 
         return $this;
     }
+
+    public function removeAllProducts(): static
+    {
+        foreach ($this->products as $product) {
+            $product->setProductCategory(null);
+        }
+
+        $this->products->clear();
+
+        return $this;
+    }
 }

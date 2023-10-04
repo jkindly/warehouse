@@ -1,0 +1,12 @@
+{% set products = entity.instance.products %}
+{% if products is not empty %}
+    <ul>
+        {% for product in products %}
+            {% set path = ea_url()
+                .setController('App\\Controller\\ProductCrudController')
+                .setAction('detail')
+                .setEntityId(product.id) %}
+            <li><a href="{{ path }}">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}

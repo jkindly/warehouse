@@ -9,7 +9,7 @@ use Faker\Factory;
 
 class ProductFixtures extends Fixture
 {
-    private const PRODUCTS_TO_CREATE = 50;
+    private const PRODUCTS_TO_CREATE = 200;
 
     public function load(ObjectManager $manager): void
     {
