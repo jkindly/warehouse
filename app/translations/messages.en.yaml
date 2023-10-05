@@ -11,6 +11,8 @@ app:
             title: Products
         categories:
             title: Categories
+        attributes:
+            title: Attributes
     crud:
         product:
             new:

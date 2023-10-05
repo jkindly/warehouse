@@ -11,6 +11,8 @@ app:
             title: Produkty
         categories:
             title: Kategorie
+        attributes:
+            title: Atrybuty
     crud:
         product:
             new:
